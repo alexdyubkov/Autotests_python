@@ -1,0 +1,15 @@
+Prerequisites
+1)Create virtual environment  if needed.
+Activate virt env if needed.
+2)pip install selenium 
+3) download driver for your browser(better use chrome) from  https://sites.google.com/chromium.org/driver/downloads. Choose version of your browser.
+4)Put your driver on disk C in a folder:
+On C: create dir "chromedriver" and put unarchived driver there.
+5) add Path variable:
+Add "C:\chromedriver" to PATH on windows. You can use it if needed( https://www.computerhope.com/issues/ch000549.htm)
+To check that is't there -> in your environment, run the command chromedriver. If you see "Starting ChromeDriver ..." => we are good.
+6) pip install pytest
+
+
+How to run:
+To run the test in CLI in your env -> cd to the folder with the project ->  pytest -s -v test_guest_can_add_product_to_basket.py
